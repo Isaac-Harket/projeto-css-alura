@@ -1,0 +1,108 @@
+<!DOCTYPE html> <!-- Esse tipo de TAG não precisa ser "fechada", pois ela tem a função de informação, e não de conteúdo. -->
+
+<html lang = "pt-br"> <!-- IDIOMA -->
+
+	<head>
+
+		<meta charset = "UTF-8"> <!-- ACENTUAÇÃO -->
+		<meta name = "viewport" content = "width=device-width"> <!-- Essa TAG serve para visualizarmos o conteúdo da página em um celular, com a largura igual ao do dispositivo móvel e com a quantidade de pixels adequada. -->
+
+		<title> Barbearia Alura </title> <!-- TÍTULO DA PÁGINA -->
+
+		<link rel = "stylesheet" href = "reset.css">
+		<link rel = "stylesheet" href = "style.css"> <!-- Relacionando o endereço de referência da página, com a outra do arquivo ".css" -->
+		<link rel = "stylesheet" href = "https://fonts.googleapis.com/css?family=Montserrat&display=swap"> <!-- Link de uma "Fonte Externa" retirada do 'Google Fonts'. É uma boa alternativa para termos mais opções de fontes e deixar o conteúdo mais bonito e padrão. -->
+
+	</head>
+
+	<body>
+
+		<header>
+			
+			<div class = "caixa">
+
+				<h1> <img src = "logo.png"> </h1> 
+
+				<nav> 
+
+					<ul>
+
+						<li> <a href = "index.html"> Home </a> </li> 
+						<li> <a href = "produtos.html"> Produtos </a> </li>  
+						<li> <a href = "contato.html"> Contato <a/> </li> 
+
+					</ul>
+
+				</nav>
+
+			</div>
+
+		</header>
+
+		<img class = "banner" src = "banner.jpg"> <!-- Adicionando uma imagem à página, com sua fonte e seu respectivo endereço. -->
+
+		<main>
+
+			<section class = "principal">
+
+				<h2 class = "titulo-principal"> Sobre a Barbearia Alura </h2> <!-- "h1" : TÍTULO PRINCIPAL -->
+
+				<img class = "utensilios" src = "utensilios.jpg" alt = "Utensílios de um Barbeiro.">
+
+				<p> Localizada no coração da cidade, a <strong> Barbearia Alura </strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia. </p> <!-- "strong" : NEGRITO -->
+
+				<p id = "missao"> <em> Nossa missão é: <strong> "Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.  </em> </p> <!-- "em" : ITÁLICO -->
+
+				<p> Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes. </p> <!-- "p" : PARÁGRAFO -->
+
+			</section> <!-- Essa tag serve especificamente para dividir o conteúdo em vários blocos no html. -->
+
+			<section class = "mapa">
+
+				<h3 class = "titulo-principal"> Nosso estabelecimento </h3>
+
+				<p> Nosso estabelecimento está localizado no coração da cidade. </p>
+
+				<div class = "mapa-conteudo">
+
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117027.4097983533!2d-46.72175464179694!3d-23.5646162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a2b2ed7f3a1%3A0xab35da2f5ca62674!2sCaelum%20-%20Escola%20de%20Tecnologia!5e0!3m2!1spt-BR!2sbr!4v1649316681257!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> <!-- Conseguimos importar o "mapa" de qualquer localização que quisermos, através do 'Google Maps'. Compartilhando o link do local desejado no nosso conteúdo, incorporando o mapa e copiando o html do link escolhido, podemos também editar as medidas, como a largura e a altura do mapa na nossa página. -->
+
+				</div>
+				
+			</section>
+
+			<section class = "beneficios">
+
+				<h3 class = "titulo-principal"> Benefícios </h3>
+
+				<div class = "conteudo-beneficios">
+					<ul class = "lista-beneficios"> <!-- Lista Não Ordenada -->
+						<li class = "itens"> Atendimento aos Clientes </li> <!-- Tag necessária para marcar cada um dos ítens da lista. -->
+						<li class = "itens"> Espaço Diferenciado </li>
+						<li class = "itens"> Localização </li>
+						<li class = "itens"> Profissionais Qualificados </li>
+						<li class = "itens"> Pontualidade </li>
+						<li class = "itens"> Limpeza </li>
+					</ul><img src = "beneficios.jpg" class = "imagem-beneficios">
+				</div> <!-- Quando utilizamos o "inline-block" é necessário que todos os elementos estejam 'colados' uns aos outros, para que qualquer espaço vazio não reflita na exibição da página, e assim, conseguimos usar os 100% de largura. -->
+
+				<div class = "video">
+
+					<iframe width="100%" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <!-- Para incorporar um vídeo à nossa página, utilizamos o mesmo método do 'Google Maps', mas nesse caso estamos usando um vídeo do 'Youtube'. Compartilhando o link do vídeo aqui, será exibido na nossa página. -->
+
+				</div>
+
+			</section> <!-- Para um bloco onde o conteúdo tenha o mesmo significado, o mesmo sentido, usamos uma "section", e não "div". -->
+
+		</main>
+
+		<footer> 
+			
+			<img src = "logo-branco.png">
+			<p class = "copyright"> &copy; Copyright Barberia Alura - 2019 </p>
+
+		</footer>
+
+	</body>
+
+</html>

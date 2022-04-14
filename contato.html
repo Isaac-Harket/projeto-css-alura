@@ -1,0 +1,136 @@
+<!DOCTYPE html> 
+
+<html> 
+
+	<head>
+
+		<meta charset = "utf-8">
+		<meta name = "viewport" content = "width=device-width"> 
+
+		<title> Contato - Barbearia Alura </title>
+
+		<link rel = "stylesheet" href = "reset.css"> 
+		<link rel = "stylesheet" href = "style.css"> 
+													   
+	</head>
+
+	<body>	
+
+		<header>
+			
+			<div class = "caixa">
+
+				<h1> <img src = "logo.png" alt = "Logo da Barbearia Alura"> </h1> <!-- Esse "alt" é uma alternativa para quem não consegue enxergar determinada imagem, ou se a imagem não está carregando corretamente. -->
+
+				<nav> 
+
+					<ul>
+
+						<li> <a href = "index.html"> Home </a> </li> 
+						<li> <a href = "produtos.html"> Produtos </a> </li> 
+						<li> <a href = "contato.html"> Contato <a/> </li> 
+
+					</ul>
+
+				</nav>
+
+			</div>
+
+		</header>
+
+		<main>
+			
+			<form> <!-- Essa é a TAG do Formulário. É responsável por pegar um conteúdo e enviar para outra página ou para outro lugar. -->
+
+				<label for = "nomesobrenome"> Nome e sobrenome </label> <!-- O "label" serve como uma etiqueta para ("for") um "input". -->
+				<input type = "text" id = "nomesobrenome" class = "input-padrao" required> <!-- O "input" fornece um campo para ser preenchido por um texto. -->
+
+				<label for = "email"> Email </label>
+				<input type = "email" id = "email" class = "input-padrao" required placeholder = "seuemail@dominio.com"> <!-- Todo "input" tem um tipo diferente. A propriedade "placeholder" é usada para adicionar um texto inicial no campo, para sugerir a forma como o campo deve ser preenchido. -->
+
+				<label for = "telefone"> Telefone </label> <!-- "Entrada de Dados" usada juntamente com o nome dado ao identificador. -->
+				<input type = "tel" id = "telefone" class = "input-padrao" required placeholder = "(XX) XXXXX-XXXX"> <!-- Com a propriedade "required" transformamos o campo comum em um de preenchimento obrigatório. -->
+
+				<label for = "mensagem"> Mensagem </label>
+				<textarea cols = "70" rows = "10" id = "mensagem" class = "input-padrao" required> </textarea> <!-- O "textarea" é um campo de mensagem adicional para o usuário inserir um conteúdo com mais linhas. "cols" significa colunas e "rows" as linhas. -->
+
+				<div> <!-- Essa divisão ("div") é usada para organizar melhor as informações que fazem parte de um grupo, que se relacionam entre si. -->
+
+					<p> Como prefere o nosso contato? </p>
+
+					<label for = "radio-email"> <input type = "radio" name = "contato" value = "Email" id = "radio-email"> Email </label> <!-- O campo que temos essas três opções de seleção é chamado de "radio". Esse tipo de input tem a configuração de serem três opções referentes a um único campo. -->
+
+					<label for = "radio-telefone"> <input type = "radio" name = "contato" value = "Telefone" id = "radio-telefone"> Telefone </label> <!-- Quando utilizamos o input do tipo ("type") "radio" sem a propriedade "name", conseguimos marcar mais de uma opção das selecionáveis. -->
+
+					<label for = "radio-whatsapp"> <input type = "radio" name = "contato" value = "WhatsApp" id = "radio-whatsapp" checked> WhatsApp </label> <!-- A propriedade "name" só pode ser "preenchida" uma única vez. Por isso que, quando selecionamos um dos ítens, ele desmarca o outro, mantendo somente um selecionado. Pois essa configuração faz com que todos eles passem a ser do mesmo grupo. -->
+
+			    </div>
+
+			    <div> <!-- Nessa divisão, assim como na de cima, deveria ter sido utilizado a tag "fieldset". É utilizado para agrupar elementos relacionados a um assunto específico. Um exemplo seria em um formulário com os dados de um cartão de crédito. -->
+
+			    	<p> Qual horário prefere ser atendido? </p> <!-- Se fosse usado um "fieldset" o título se chamaria "legend" no lugar do "p". E dentro de um "fieldset" não temos parágrafos, apenas esse título. -->
+
+			    	<select> <!-- O seletor é um campo do tipo "select" que tem dentro dele várias opções. -->
+
+			    		<option> Manhã </option> <!-- As opções são campos de conteúdo referentes a tag "select". -->
+			    		<option> Tarde </option>
+			    		<option> Noite </option>
+
+			    	</select>
+
+			    </div>
+
+			    <label class = "checkbox"> <input type = "checkbox" checked> Gostaria de receber nossas novidades por email? </label> <!-- Esse "input" do tipo "checkbox" pode ser criado dentro de um "label" para marcar e desmarcar o campo quadrado de seleção. A propriedade "checked" é usada para que um campo já carregue marcado na página, para facilitar a vida do usuário ou até para sugerir que aquele campo seja preenchido. -->
+
+				<input type = "submit" value = "Enviar Formulário" class = "enviar"> <!-- O campo para envio de dados ("submit") deve possuir um "valor". -->
+
+			</form> <!-- Os formulários também capturam as informações que o usuário digitar e fazem o envio de dados para um servidor. -->
+
+			<section class = "espacamento-tabela">
+
+				<table> <!-- A tag para criar tabela é a "table". Uma tabela é uma sequência de linhas e colunas. -->
+
+					<thead> <!-- A tag "thead" é específica para indicar o cabeçalho das informações da tabela. -->
+
+						<tr>
+							<th> Dia </th> <!-- Essa célula "th" indica que ela faz parte desse cabeçalho ("thead"). -->
+							<th> Horário </th>
+						</tr>
+
+			    	</thead>
+
+			    	<tbody> <!-- A tag "tbody" é específica para indicar as informações do corpo da tabela. -->
+
+						<tr>
+							<td> Segunda </td> <!-- Utilizamos a tag "td" para marcar uma coluna de uma tabela. -->
+							<td> 8h ~ 20h </td>
+						</tr>
+
+						<tr> <!-- Utilizamos a tag "tr" para marcar uma linha de uma tabela. -->
+							<td> Quarta </td>
+							<td> 8h ~ 20h </td>
+						</tr>
+
+						<tr>
+							<td> Sexta </td>
+							<td> 8h ~ 20h </td>
+						</tr>
+
+					</tbody>
+
+				</table>
+
+			</section>
+
+		</main>
+
+		<footer> 
+			
+			<img src = "logo-branco.png" alt = "Logo da Barbearia Alura">
+			<p class = "copyright"> &copy; Copyright Barberia Alura - 2019 </p>
+
+		</footer>
+
+	</body>
+
+</html>
